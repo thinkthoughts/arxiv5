@@ -1,0 +1,62 @@
+[
+  {
+    "rpi": "RPI-0001",
+    "reading_point": "Per-prime count",
+    "lean_specification": "Formalize the count of progression terms divisible by each prime p dividing n.",
+    "arxiv": {"id": "2610.37512", "version": "v1", "category": "math.NT", "categories": ["math.NT", "math.CO"], "title": "Coprime matchings of divisor sets", "authors": ["Max A. Alekseyev"], "url": "https://arxiv.org/abs/2610.37512"},
+    "twitter": {"url": "https://x.com/dan_hawkley/status/2115636242104865273"},
+    "lean": {"status": "Proposed", "declaration": null, "repository": null, "commit": null, "toolchain": null, "dependencies": ["Arithmetic progressions", "Prime divisibility", "Finite counting"], "verification": null},
+    "notes": "Base lemma proposed for either a Hall-condition proof or a determinant route.",
+    "updated_at": "2026-10-31"
+  },
+  {
+    "rpi": "RPI-0002",
+    "reading_point": "Hall subset inequalities",
+    "lean_specification": "Derive Hall's subset condition for the coprimality bipartite graph from suitable count hypotheses.",
+    "arxiv": {"id": "2610.37512", "version": "v1", "category": "math.NT", "categories": ["math.NT", "math.CO"], "title": "Coprime matchings of divisor sets", "authors": ["Max A. Alekseyev"], "url": "https://arxiv.org/abs/2610.37512"},
+    "twitter": {"url": "https://x.com/dan_hawkley/status/2115636242104865273"},
+    "lean": {"status": "Proposed", "declaration": null, "repository": null, "commit": null, "toolchain": null, "dependencies": ["RPI-0001", "Finite bipartite graphs", "Hall's theorem"], "verification": null},
+    "notes": "Potential proof route; sufficiency must be established explicitly.",
+    "updated_at": "2026-10-31"
+  },
+  {
+    "rpi": "RPI-0003",
+    "reading_point": "Vandermonde factorization",
+    "lean_specification": "Specify the matching matrix and prove the determinant factorization needed for the Vandermonde route.",
+    "arxiv": {"id": "2610.37512", "version": "v1", "category": "math.NT", "categories": ["math.NT", "math.CO"], "title": "Coprime matchings of divisor sets", "authors": ["Max A. Alekseyev"], "url": "https://arxiv.org/abs/2610.37512"},
+    "twitter": {"url": "https://x.com/dan_hawkley/status/2115636242104865273"},
+    "lean": {"status": "Proposed", "declaration": null, "repository": null, "commit": null, "toolchain": null, "dependencies": ["Matrix determinant", "Vandermonde determinant", "Explicit matrix construction"], "verification": null},
+    "notes": "Alternative proof route; not assumed to follow automatically from the per-prime count.",
+    "updated_at": "2026-10-31"
+  },
+  {
+    "rpi": "RPI-0004",
+    "reading_point": "Perfect-matching criterion",
+    "lean_specification": "Formalize the necessary and sufficient per-prime multiplicity criterion for coprime divisor matchings.",
+    "arxiv": {"id": "2610.37512", "version": "v1", "category": "math.NT", "categories": ["math.NT", "math.CO"], "title": "Coprime matchings of divisor sets", "authors": ["Max A. Alekseyev"], "url": "https://arxiv.org/abs/2610.37512"},
+    "twitter": {"url": "https://x.com/dan_hawkley/status/2115636242104865273"},
+    "lean": {"status": "Proposed", "declaration": null, "repository": null, "commit": null, "toolchain": null, "dependencies": ["RPI-0001", "RPI-0002 or RPI-0003", "Coprime bijections"], "verification": null},
+    "notes": "The theorem's condition bounds the progression terms divisible by each p | n by N/(nu_p(n)+1).",
+    "updated_at": "2026-10-31"
+  },
+  {
+    "rpi": "RPI-0005",
+    "reading_point": "M-number characterization",
+    "lean_specification": "Prove the characterization of n for which every primitive progression of length tau(n) admits a coprime divisor matching.",
+    "arxiv": {"id": "2610.37512", "version": "v1", "category": "math.NT", "categories": ["math.NT", "math.CO"], "title": "Coprime matchings of divisor sets", "authors": ["Max A. Alekseyev"], "url": "https://arxiv.org/abs/2610.37512"},
+    "twitter": {"url": "https://x.com/dan_hawkley/status/2115636242104865273"},
+    "lean": {"status": "Proposed", "declaration": null, "repository": null, "commit": null, "toolchain": null, "dependencies": ["RPI-0004", "Prime exponents", "Primitive progressions"], "verification": null},
+    "notes": "M-number means p^p does not divide n for every prime p.",
+    "updated_at": "2026-10-31"
+  },
+  {
+    "rpi": "RPI-0006",
+    "reading_point": "Non-M partition induction",
+    "lean_specification": "Partition progressions by residue classes for excess prime exponents, then prove the required inductive step.",
+    "arxiv": {"id": "2610.37512", "version": "v1", "category": "math.NT", "categories": ["math.NT", "math.CO"], "title": "Coprime matchings of divisor sets", "authors": ["Max A. Alekseyev"], "url": "https://arxiv.org/abs/2610.37512"},
+    "twitter": {"url": "https://x.com/dan_hawkley/status/2115636242104865273"},
+    "lean": {"status": "Proposed", "declaration": null, "repository": null, "commit": null, "toolchain": null, "dependencies": ["Residue-class partitions", "Prime exponent induction", "Explicit count hypotheses"], "verification": null},
+    "notes": "Formalization target for the cases requiring progression partitioning; proof obligations remain to be specified.",
+    "updated_at": "2026-10-31"
+  }
+]
